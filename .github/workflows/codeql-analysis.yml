@@ -23,7 +23,7 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
-        queries: security-extended
+        queries: +security-and-quality # security-extended
         config: |
           paths-ignore:
             - 'data/static/codefixes'
